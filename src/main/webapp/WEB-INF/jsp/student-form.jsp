@@ -59,7 +59,7 @@
 		<br>
 
 		<div>
-			<!-- Check Boxes can be selected multiple options -->
+			<!-- Check Boxes: can be selected multiple options -->
 			Operating Systems:
 			<form:checkbox path="operatingSystems" value="Linux" label="Linux" />
 
