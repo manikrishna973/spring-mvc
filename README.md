@@ -7,4 +7,8 @@
 <li>adding data to the model</li>
 <li>Usage of spring MVC form-tags</li>
 <li>usage of spring mvc form-tags like dropdown, checkboxes, radio buttons</li>
+ 
+ <h3>Added new controller to use the validators</h3>
+ <li>form validation</li>
+ <li>triming the white space to null</li>
 </ul>
