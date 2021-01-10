@@ -12,6 +12,9 @@
 
 customer is confirmed: ${customer.firstName} ${customer.lastName}
 <br>
+points: ${customer.points}
+<br>
+postal code: ${customer.postalCode}
         
 </body>
 </html>

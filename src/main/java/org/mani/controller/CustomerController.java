@@ -47,7 +47,11 @@ public class CustomerController {
 	Customer theCustomer, 
 	BindingResult bindingResult) {
 		
-		System.out.println("lastName: |"+theCustomer.getLastName()+"|");
+		System.out.println("|" +"firstName: "+ theCustomer.getFirstName()+"|"+"lastName: |"+theCustomer.getLastName()+"| ponits: "+theCustomer.getPoints());
+		
+		//To find out the given error code, you can log the details of the binding result
+
+		 System.out.println("Binding result: " + bindingResult);   
 		
 		if(bindingResult.hasErrors()) {
 			return "customer/customer-form";

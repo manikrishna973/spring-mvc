@@ -18,14 +18,22 @@
 		<property name="suffix" value=".jsp" />
 	</bean>
 
-	<context:component-scan
-		base-package="org.mani"></context:component-scan>
+	<context:component-scan base-package="org.mani"></context:component-scan>
 
 	<mvc:annotation-driven />
 	<mvc:annotation-driven
 		enable-matrix-variables="true" />
-		
-		<!-- to use CSS, JavaScript and Images in Spring MVC Web App -->
-		<mvc:resources mapping="/resources/**" location="/resources/"></mvc:resources>
 
+	<!-- to use CSS, JavaScript and Images in Spring MVC Web App -->
+	<mvc:resources mapping="/resources/**"
+		location="/resources/"></mvc:resources>
+
+
+	<!-- Load custom message resources -->
+	<!-- id and class must be same as used -->
+	<bean id="messageSource" 
+      class="org.springframework.context.support.ResourceBundleMessageSource">
+    <property name="basenames" value="messages" />
+ 
+</bean>
 </beans>
