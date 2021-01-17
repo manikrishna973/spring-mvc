@@ -35,6 +35,12 @@ Last Name(*):
 		<form:errors path="postalCode" cssClass="error" />
 		<br>
 		<br>
+		
+		 Course code:<form:input path="courseCode" />
+		<form:errors path="courseCode" cssClass="error" />
+		<br>
+		<br>
+		
 		<i>(*) Asterisk Means Required</i>
 		<input type="submit">
 	</form:form>

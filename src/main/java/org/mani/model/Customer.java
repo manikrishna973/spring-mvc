@@ -26,6 +26,10 @@ public class Customer {
 	@Pattern(regexp = "^[A-Za-z0-9]{5}" , message = "must be only 5 char/digits" )
 	private String postalCode;
 	
+	
+	@org.mani.validation.courseCode
+	private String courseCode;
+	
 	public String getFirstName() {
 		return firstName;
 	}
@@ -49,6 +53,12 @@ public class Customer {
 	}
 	public void setPostalCode(String postalCode) {
 		this.postalCode = postalCode;
+	}
+	public String getCourseCode() {
+		return courseCode;
+	}
+	public void setCourseCode(String courseCode) {
+		this.courseCode = courseCode;
 	}
 	
 	
